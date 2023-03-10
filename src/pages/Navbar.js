@@ -18,13 +18,13 @@ function Navbar() {
         <nav className='flex justify-between items-center'>
             <img src={logoSwift} alt='logo'></img>
             <img className='right-0 cursor-pointer' onClick={showNavbar} src={hmgBtn} alt='button hamburger'></img>
-            <div ref={navbarRef} className='absolute top-0 right-0 h-screen pt-14 font-bold text-white w-full bg-black text-center bg-opacity-95 hidden'>
-            <img className='ml-[308px] cursor-pointer' onClick={showNavbar} src={clsBtn} alt='close button'></img>
-            <ul className='mt-9'>
+            <div ref={navbarRef} className='absolute top-0 right-0 md:text-xl h-screen pt-14 font-bold text-white w-full bg-black text-center bg-opacity-95 md:pt-24 hidden'>
+            <img className='ml-[308px] md:ml-[1110px] cursor-pointer' onClick={showNavbar} src={clsBtn} alt='close button'></img>
+            <ul className='mt-9 md:mt-12'>
               <li>Home</li>
-              <li className='mt-5'>Products</li>
-              <li className='mt-5'>Career</li>
-              <li className='mt-5'>Contact Us</li>
+              <li className='mt-5 md:mt-10'>Products</li>
+              <li className='mt-5 md:mt-10'>Career</li>
+              <li className='mt-5 md:mt-10'>Contact Us</li>
             </ul>
             </div>
         </nav>
